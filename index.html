@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 style="text-align: center;" class="title">Number Guessing Game</h1>
+  <p style="text-align: center;" class="sub-title">Guess a number between 1 and 100</p>
+  <section class="game">
+    <div class="guess-nav">
+      <div class="number-input-bar">
+        <label for="number-input">Enter your guess:</label>
+        <button class="submit">Guess</button>
+      </div>
+      <input type="number" placeholder="Type a number..." class="number-input">
+    </div>
+
+    <div class="info">
+      <div class="previous-guess">
+        <div class="previous-guess-content">
+          <div class="previous-guess-title">
+            <i class="fa-solid fa-hashtag"></i>Previous Guesses
+          </div>
+          <div class="previous-guesses">
+            <p class="previous-guess-display">None yet</p>
+          </div>
+        </div>
+        <p class="chances-left">Chances left: 10</p>
+        <button class="play-again">Play Again</button>
+      </div>
+
+      <div class="result">
+        <div class="result-title">
+          <i class="fa-brands fa-sistrix"></i>Result
+        </div>
+        <p class="low-or-high">Low / High</p>
+        <p class="wrong-or-correct">- - -</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

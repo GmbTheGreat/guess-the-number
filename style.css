@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width: 600px;
+    margin: auto;
+    padding: 16px;
+    padding: 40px 20px;
+}
+
+.guess-nav {
+    margin-bottom: 12px;
+}
+
+.sub-title {
+    text-indent: 6px;
+}
+
+.game {
+    margin-top: 20px;
+    border: 1px rgba(0,0,0,0.2) solid;
+    border-radius: 8px;
+    padding: 22px 18px;
+}
+
+.number-input-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.submit {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    padding: 8px 16px;
+    font-weight: 500;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+.number-input {
+    border: 1px rgba(0,0,0,0.2) solid;
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: 100%;
+}
+
+.info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 8px;
+}
+
+@media (max-width: 600px) {
+    .info {
+        grid-template-columns: 1fr;
+    }
+}
+
+.previous-guess-content {
+    background-color: rgba(138, 133, 133, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.previous-guess-title {
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 8px;
+    font-size: 18px;
+}
+
+.previous-guess-display {
+    color: #b8b5b5;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.chances-left {
+    text-indent: 8px;
+    margin-top: 12px;
+}
+
+.play-again {
+    margin-top: 12px;
+    margin-left: 8px;
+    width: 44%;
+    background: #3b4eb9;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 2px;
+    color: white;
+    display: none;
+    transition: ease 0.3s;
+}
+
+.play-again:hover {
+    cursor: pointer;
+    position: relative;
+    background: #606db5;
+    transform: translateY(1px);
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+
+    background-color: rgba(138, 133, 133, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.result-title {
+    text-align: center;
+    font-size: 18px;
+}
+
+.low-or-high {
+    text-align: center;
+    border: 1px rgba(0,0,0,0.2) solid;
+    border-radius: 8px;
+    padding: 5px;
+    background: white;
+    color: rgb(184, 181, 181);
+    margin-top: 12px;
+}
+
+.wrong-or-correct {
+    margin-top: 12px;
+    text-align: center;
+    border: 1px rgba(0,0,0,0.2) solid;
+    border-radius: 8px;
+    padding: 5px;
+    background: white;
+    color: rgb(184, 181, 181);
+}
